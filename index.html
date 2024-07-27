@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Project Management</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -21,24 +23,27 @@
     <nav class="sidebar">
         <ul>
             <li><a href="#" class="active">1</a></li>
-        
+
         </ul>
     </nav>
     <main>
         <section class="intro">
-           <div class="intro-header">
-            <h2>Technical Project Management</h2>
-            <button class="submit-task">Submit Task</button>
-        </div>
-            
+            <div class="intro-header">
+                <h2>Technical Project Management</h2>
+                <button class="submit-task">Submit Task</button>
+            </div>
+
             <p class="description">
-                Explore the world of Managememnt <br> As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
-            
+                Explore the world of Managememnt <br> As a project manager, you play an important reole in leading a
+                project through initiation, planning, execution, monitoring, controlling and completion. How? Do you
+                want to manage each and every step of your life?</p>
+
         </section>
         <section class="content">
             <div class="card">
                 <h3>Technical Project Management <img src="i-icon.jpg" alt="Info Icon" class="icon"></h3>
-                <p><strong>Description :</strong> Story of Alignment Scope of the Agility Specific Accountable Straggering Approach</p>
+                <p><strong>Description :</strong> Story of Alignment Scope of the Agility Specific Accountable
+                    Straggering Approach</p>
                 <div class="video-thumbnail">
                     <!-- Placeholder for video thumbnail -->
                     <img src="video-thumbnail.jpg" alt="Video Thumbnail">
@@ -49,7 +54,8 @@
             </div>
             <div class="card">
                 <h3>Threadbuild<img src="i-icon.jpg" alt="Info Icon" class="icon2"></h3>
-                <p><strong>Description : </strong> Watch the video and threadbuild, and jot out key threads while watching the video</p>
+                <p><strong>Description : </strong> Watch the video and threadbuild, and jot out key threads while
+                    watching the video</p>
                 <div class="thread-section">
                     <div class="section-title">Thread A</div>
                     <div class="sub-thread">
@@ -68,61 +74,63 @@
             </div>
             <div class="card">
                 <h3>Structure your Pointers<img src="i-icon.jpg" alt="Info Icon" class="icon3"></h3>
-                <p><strong>Description :</strong>Write a 300 - 400 word article from your thread . Publish your understanding and showcase your understanding to the entire world </p>
+                <p><strong>Description :</strong>Write a 300 - 400 word article from your thread . Publish your
+                    understanding and showcase your understanding to the entire world </p>
                 <input type="text" placeholder="Title">
                 <textarea placeholder="Content"></textarea>
             </div>
-            
-<div class="card">
-    <h3>4SA Method<img src="i-icon.jpg" alt="Info Icon" class="icon4"></h3>
-    <p><strong>Description :</strong> To Explore more read more</p>
-    <div class="accordion">
-        <div class="accordion-item">
-            <h4>Introduction <span class="see-more">See More</span></h4>
-            <div class="accordion-content">
-                The 4SA Method, How to bring an idea into progress?
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h4>Thread A <span class="see-more">See More</span></h4>
-            <div class="accordion-content">
-                How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h4>Example 1 <span class="see-more">See More</span></h4>
-            <div class="accordion-content">
-                You have a concept, How will you put it into progress?
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var accItems = document.getElementsByClassName("accordion-item");
+            <div class="card">
+                <h3>4SA Method<img src="i-icon.jpg" alt="Info Icon" class="icon4"></h3>
+                <p><strong>Description :</strong> To Explore more read more</p>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h4><strong>Introduction </strong><span class="see-more"> </span></h4>
+                        <div class="accordion-content">
+                            The 4SA Method, How to bring an idea into progress?
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4><strong>Thread A </strong><span class="see-more"> </span></h4>
+                        <div class="accordion-content">
+                            How are you going to develop your strategy? Which method are you going to use to develop a
+                            strategy? What if the project is lengthy?
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4><strong>Example 1 </strong><span class="see-more"> </span></h4>
+                        <div class="accordion-content">
+                            You have a concept, How will you put it into progress?
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        for (var i = 0; i < accItems.length; i++) {
-            accItems[i].addEventListener("click", function () {
-                var content = this.querySelector(".accordion-content");
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var accItems = document.getElementsByClassName("accordion-item");
 
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                    this.querySelector("h4").classList.remove("active");
-                } else {
-                    // Hide all other content
-                    var allContents = document.getElementsByClassName("accordion-content");
-                    for (var j = 0; j < allContents.length; j++) {
-                        allContents[j].style.display = "none";
-                        allContents[j].previousElementSibling.classList.remove("active");
+                    for (var i = 0; i < accItems.length; i++) {
+                        accItems[i].addEventListener("click", function () {
+                            var content = this.querySelector(".accordion-content");
+
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                                this.querySelector("h4").classList.remove("active");
+                            } else {
+                                // Hide all other content
+                                var allContents = document.getElementsByClassName("accordion-content");
+                                for (var j = 0; j < allContents.length; j++) {
+                                    allContents[j].style.display = "none";
+                                    allContents[j].previousElementSibling.classList.remove("active");
+                                }
+                                content.style.display = "block";
+                                this.querySelector("h4").classList.add("active");
+                            }
+                        });
                     }
-                    content.style.display = "block";
-                    this.querySelector("h4").classList.add("active");
-                }
-            });
-        }
-    });
-</script>
+                });
+            </script>
         </section>
     </main>
     <aside class="notice-board">
@@ -132,4 +140,5 @@
         <!-- Footer content -->
     </footer>
 </body>
+
 </html>
