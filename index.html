@@ -45,7 +45,7 @@
                 <p><strong>Description :</strong> Story of Alignment Scope of the Agility Specific Accountable
                     Straggering Approach</p>
                 <div class="video-thumbnail">
-                    <!-- Placeholder for video thumbnail -->
+                   
                     <img src="video-thumbnail.jpg" alt="Video Thumbnail">
                     <a href="https://www.youtube.com/watch?v=VIDEO_ID" class="button" target="_blank">
                         Watch Video
@@ -74,10 +74,11 @@
             </div>
             <div class="card">
                 <h3>Structure your Pointers<img src="i-icon.jpg" alt="Info Icon" class="icon3"></h3>
-                <p><strong>Description :</strong>Write a 300 - 400 word article from your thread . Publish your
-                    understanding and showcase your understanding to the entire world </p>
-                <input type="text" placeholder="Title">
-                <textarea placeholder="Content"></textarea>
+                <p><strong>Description :</strong> Write a 300 - 400 word article from your thread. Publish your understanding and showcase your knowledge to the entire world.</p>
+                <p><strong>Title</strong></p>
+                <textarea placeholder=""></textarea>
+                <p><strong>Content</strong></p>
+                <textarea class="detail" id="editor" placeholder=""></textarea>
             </div>
 
             <div class="card">
@@ -131,11 +132,32 @@
                     }
                 });
             </script>
+            <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+            <script>
+                tinymce.init({
+                  selector: '#editor',  // CSS selector to target the textarea
+                  menubar: false,
+                  plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount'
+                  ],
+                  toolbar: 'undo redo | formatselect | bold italic backcolor | \
+                            alignleft aligncenter alignright alignjustify | \
+                            bullist numlist outdent indent | removeformat | help'
+                });
+            </script>
         </section>
     </main>
     <aside class="notice-board">
         <p> Notice Board</p>
     </aside>
+    
+        <aside class="notice-board1">
+            <img src="question-mark.jpeg" alt="question-mark">
+            <img src="meeting.jpg" alt="meeting">
+            <img src="schedule.jpeg" alt="schedule">
+        </aside>
     <footer>
         <!-- Footer content -->
     </footer>
