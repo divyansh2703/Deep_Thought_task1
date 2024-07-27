@@ -150,8 +150,42 @@
         </section>
     </main>
     <aside class="notice-board">
-        <p> Notice Board</p>
-    </aside>
+        <p>Notice Board</p>
+        <div class="notice-content">
+          <textarea id="notice-input" placeholder=""></textarea>
+          <button id="post-notice">Post</button>
+          <div id="notices"></div>
+        </div>
+        <button class="close-btn">✖</button>
+      </aside>
+
+      <script>
+        document.getElementById('post-notice').addEventListener('click', function() {
+          var noticeText = document.getElementById('notice-input').value;
+          if (noticeText.trim() !== "") {
+            var noticesDiv = document.getElementById('notices');
+            var newNotice = document.createElement('div');
+            newNotice.className = 'notice';
+            newNotice.textContent = noticeText;
+      
+            // Add a delete button to each notice
+            var deleteBtn = document.createElement('button');
+            deleteBtn.textContent = '✖';
+            deleteBtn.className = 'delete-notice';
+            deleteBtn.onclick = function() {
+              this.parentElement.remove();
+            };
+            newNotice.appendChild(deleteBtn);
+      
+            noticesDiv.appendChild(newNotice);
+            document.getElementById('notice-input').value = ""; // Clear input
+          }
+        });
+      
+        document.querySelector('.close-btn').addEventListener('click', function() {
+          document.querySelector('.notice-board').style.display = 'none';
+        });
+      </script>
     
         <aside class="notice-board1">
             <img src="question-mark.jpeg" alt="question-mark">

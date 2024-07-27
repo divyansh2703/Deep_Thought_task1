@@ -354,22 +354,68 @@ main {
 /* Notice Board */
 .notice-board {
     position: fixed;
-    top: 20%;
+    top: 30%;
     right: 0;
     transform: translateY(-50%);
     background-color: black;
     color: white;
     padding: 20px;
     writing-mode: vertical-rl;
-}
-
-.notice-board1 img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 200px;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .notice-board p {
+    margin : 0;
+    font-weight: bold;
+   
+  }
+  
+  .notice-content {
+    writing-mode: horizontal-tb; /* Override vertical mode for content area */
+    width: 100%;
+  }
+  
+  .notice-content textarea {
     width: 40px;
-    height: 40px;
-
-}
-
-.notice-board1{
+    margin-top: 10px;
+    height: 190px;
+    margin-bottom: 0px;
+    padding: 4px;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  #notices {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .close-btn {
+    margin-top: -170px;
+    margin-right: -79px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+  
+  .notice {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+  }
+  
+  .notice-board1 {
+    /* Your existing styles for the other element */
     position: fixed;
     top: 90%;
     right: 0;
@@ -377,9 +423,14 @@ main {
     color: white;
     padding: 20px;
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
-}
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .notice-board1 img {
+    width: 40px;
+    height: 40px;
+  }
 
 .card .icon4 {
     width: 24px;
