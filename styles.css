@@ -363,6 +363,64 @@ main {
     writing-mode: vertical-rl;
 }
 
+.card .icon4 {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.card p {
+    margin: 0 0 15px;
+}
+
+.accordion {
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item h4 {
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between; /* Space between title and 'See More' */
+    align-items: center;
+}
+
+.accordion-item h4:after {
+    content: "\25BC"; /* Unicode for down arrow */
+    font-size: 12px;
+}
+
+.accordion-item h4.active:after {
+    content: "\25B2"; /* Unicode for up arrow */
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.accordion-item h4:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-item h4 .see-more {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.accordion-item h4 .see-more:hover {
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .content {
